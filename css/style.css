@@ -14,6 +14,7 @@ html {
   --accent-color: #2196f3;
   --primery-white-color: #fff;
   --primery-black-color: #2f303a;
+  --secondary-bgc: #f5f4fa;
 }
 
 body {
@@ -244,7 +245,7 @@ body {
 
 /* Наша команда */
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bgc);
 }
 
 .our-team .title {
