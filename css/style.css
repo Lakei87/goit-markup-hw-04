@@ -151,7 +151,17 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--primery-black-color);
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-color: #c4c4c4;
 }
 
 .hero-container {
@@ -196,6 +206,35 @@ body {
 
 .advant .item:not(:last-child) {
   margin-right: 30px;
+}
+
+/* Стилизация иконки */
+.advant .item::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bgc);
+  border-radius: 4px;
+}
+
+.advant .icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.advant .icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.advant .icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.advant .icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .advant-title {
@@ -303,12 +342,31 @@ body {
   color: var(--secondary-text-color);
 }
 
+/*  */
+.regular-customers .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03;
+  text-align: center;
+}
 /*-------Подвал страницы-------*/
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--primery-black-color);
+}
+
+.footer .container {
+  display: flex;
+}
+
+.address-box {
+  margin-right: 70px;
 }
 
 /* logo */
@@ -358,6 +416,37 @@ body {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
+}
+
+/* Присоединяйтесь */
+.join-us {
+  max-width: 206px;
+  margin-top: 12px;
+}
+
+.join-us [title="join-us"] {
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+}
+
+.join-us > .list {
+  display: flex;
+}
+
+.join-us .item {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join-us .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /*--------------------Стили для страницы Портфолио---------------- */
@@ -416,8 +505,9 @@ body {
   margin-top: 30px;
 }
 
-.item-content {
-  background-color: var(--primery-white-color);
+.item-content:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .img-description {
