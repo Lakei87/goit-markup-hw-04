@@ -131,18 +131,22 @@ body {
   margin-left: auto;
 }
 
-/* .site-contact .contact-mail::before {
+/* .site-contact li:nth-child(1)::before {
   content: "";
   display: inline-block;
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
+  width: 26px;
+  height: 26px;
   background-image: url(../images/envelope-hover.svg);
   background-repeat: no-repeat;
   outline: 1px solid tomato;
+  background-position: 50% 50%;
 }
 
-.site-contact .item:nth-child(1) {
+.site-contact li:nth-child(1) {
+  background-color: tomato;
+  display: flex;
+  align-items: center;
 } */
 
 .header .contact-tel,
@@ -223,7 +227,7 @@ body {
 }
 
 /* Стилизация иконки */
-.advant .item::before {
+/* .advant .item::before {
   content: "";
   display: block;
   margin-bottom: 30px;
@@ -233,7 +237,7 @@ body {
   background-position: center;
   background-color: var(--secondary-bgc);
   border-radius: 4px;
-}
+} */
 
 .advant .icon-antenna::before {
   background-image: url(../images/antenna.svg);
@@ -462,16 +466,23 @@ body {
   width: 44px;
   height: 44px;
 
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: auto; */
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
-.joinus .link-instagram {
-  background-image: url(../images/instagram.svg);
+.icon-instagram {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: tomato;
 }
+
+/* .joinus .link-instagram {
+  background-image: url(../images/sprite.svg#icon-instagram);
+} */
 
 .joinus .link-instagram:hover,
 .joinus .link-instagram:focus {
