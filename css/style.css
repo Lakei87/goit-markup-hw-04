@@ -131,6 +131,20 @@ body {
   margin-left: auto;
 }
 
+/* .site-contact .contact-mail::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/envelope-hover.svg);
+  background-repeat: no-repeat;
+  outline: 1px solid tomato;
+}
+
+.site-contact .item:nth-child(1) {
+} */
+
 .header .contact-tel,
 .header .contact-mail {
   display: inline-block;
@@ -419,12 +433,12 @@ body {
 }
 
 /* Присоединяйтесь */
-.join-us {
+.joinus {
   max-width: 206px;
   margin-top: 12px;
 }
 
-.join-us [title="join-us"] {
+.title-joinus {
   margin: 0 0 20px;
   font-weight: 700;
   font-size: 14px;
@@ -434,19 +448,61 @@ body {
   color: var(--primery-white-color);
 }
 
-.join-us > .list {
+.joinus > .list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.join-us .item {
+.joinus .item:not(:nth-child(4n + 4)) {
+  margin-right: 10px;
+}
+
+.joinus .link {
+  display: block;
   width: 44px;
   height: 44px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
-.join-us .item:not(:last-child) {
-  margin-right: 10px;
+.joinus .link-instagram {
+  background-image: url(../images/instagram.svg);
+}
+
+.joinus .link-instagram:hover,
+.joinus .link-instagram:focus {
+  background-color: var(--accent-color);
+}
+
+.joinus .link-twitter {
+  background-image: url(../images/twitter.svg);
+}
+
+.joinus .link-twitter:hover,
+.joinus .link-twitter:focus {
+  background-color: var(--accent-color);
+}
+
+.joinus .link-facebook {
+  background-image: url(../images/facebook.svg);
+}
+
+.joinus .link-facebook:hover,
+.joinus .link-facebook:focus {
+  background-color: var(--accent-color);
+}
+
+.joinus .link-linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+
+.joinus .link-linkedin:hover,
+.joinus .link-linkedin:focus {
+  background-color: var(--accent-color);
 }
 
 /*--------------------Стили для страницы Портфолио---------------- */
