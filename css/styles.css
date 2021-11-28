@@ -83,7 +83,7 @@ body {
 }
 
 /* ==================Стили для страницы Студия================== */
-/*================Шапка страницы==============*/
+/* ================Шапка страницы============== */
 .header {
   background-color: var(--primery-white-color);
   border-bottom: 1px solid #ececec;
@@ -148,19 +148,16 @@ body {
   margin-right: 50px;
 }
 
-.contact-mail:hover,
-.contact-mail:focus,
-.contact-tel:hover,
-.contact-tel:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.contact-mail,
-.contact-tel {
+.contact-link {
   display: flex;
   align-items: center;
   color: var(--secondary-text-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contact-icon {
@@ -168,7 +165,7 @@ body {
 }
 
 /* ============Уникальный контент стрыницы=========== */
-/* ====Наш герой ====*/
+/* ====Наш герой ==== */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -176,6 +173,7 @@ body {
   margin-right: auto;
   height: 600px;
   max-width: 1600px;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -216,7 +214,7 @@ body {
   cursor: pointer;
 }
 
-/*==== Преимущества компании ====*/
+/* ==== Преимущества компании ==== */
 .advant .list {
   display: flex;
 }
@@ -258,7 +256,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* =====Чем мы занимаемся ====*/
+/* =====Чем мы занимаемся ==== */
 .directions.section {
   padding-top: 0;
 }
@@ -283,7 +281,7 @@ body {
   margin-right: 30px;
 }
 
-/*===== Наша команда==== */
+/* ===== Наша команда==== */
 .our-team {
   background-color: var(--secondary-bgc);
 }
@@ -363,7 +361,8 @@ body {
   border-radius: 50%;
 }
 
-.ourteam-links .link:hover {
+.ourteam-links .link:hover,
+.ourteam-links .link:focus {
   fill: var(--primery-white-color);
   background-color: var(--accent-color);
 }
@@ -409,7 +408,7 @@ body {
   border: 1px solid var(--accent-color);
 }
 
-/*================Подвал страницы================*/
+/* ================Подвал страницы================ */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -520,7 +519,7 @@ body {
   background-color: var(--accent-color);
 }
 
-/*===================Стили для страницы Портфолио=============== */
+/* ===================Стили для страницы Портфолио=============== */
 /* Навигация продуктов */
 .products-title {
   margin: 0;
