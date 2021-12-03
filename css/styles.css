@@ -53,6 +53,9 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.link {
   text-decoration: none;
 }
 
@@ -119,19 +122,25 @@ body {
   margin-right: 50px;
 }
 
-.site-nav .list {
+.site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+
+  transition: color 200ms var(--our-timing-effect);
 }
 
-.site-nav .list:hover,
-.site-nav .list:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .list::after {
+.site-nav .link-action {
+  color: var(--accent-color);
+}
+
+.site-nav .link-action::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -141,11 +150,6 @@ body {
 
   border-radius: 2px;
   background-color: var(--accent-color);
-  opacity: 1;
-}
-
-.site-nav .list-action {
-  color: var(--accent-color);
 }
 
 /* Наши контакты */
@@ -174,6 +178,9 @@ body {
   display: flex;
   align-items: center;
   color: var(--secondary-text-color);
+
+  transition: color 250ms var(--our-timing-effect),
+    fill 250ms var(--our-timing-effect);
 }
 
 .contact-link:hover,
@@ -381,6 +388,9 @@ body {
 
   fill: var(--icon-bgc);
   border-radius: 50%;
+
+  transition: fill 250ms var(--our-timing-effect),
+    background-color 250ms var(--our-timing-effect);
 }
 
 .ourteam-links .link:hover,
@@ -413,7 +423,7 @@ body {
   margin-right: 30px;
 }
 
-.regcustom-item .regcustom-link {
+.regcustom-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -422,6 +432,9 @@ body {
   fill: var(--icon-bgc);
   border: 1px solid var(--icon-bgc);
   border-radius: 4px;
+
+  transition: fill 250ms var(--our-timing-effect),
+    border 250ms var(--our-timing-effect);
 }
 
 .regcustom-link:hover,
@@ -470,8 +483,7 @@ body {
 }
 
 /* Наши контакты в подвале страницы */
-.footer-mail,
-.footer-tel {
+.footer-contacts .link {
   display: inline-block;
 
   font-style: normal;
@@ -479,20 +491,17 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms var(--our-timing-effect);
+}
+
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--accent-color);
 }
 
 .footer-mail {
   margin-bottom: 6px;
-}
-
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--accent-color);
-}
-
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--accent-color);
 }
 
 /* Присоединяйтесь */
@@ -534,6 +543,8 @@ body {
   fill: var(--primery-white-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--our-timing-effect);
 }
 
 .joinus .link:hover,
@@ -569,6 +580,9 @@ body {
 
   background-color: #f5f4fa;
   border-radius: 4px;
+
+  transition: background-color 250ms var(--our-timing-effect),
+    color 250ms var(--our-timing-effect);
 
   cursor: pointer;
 }
